@@ -1,0 +1,401 @@
+/* スムーズスクロール */
+html{
+  scroll-behavior: smooth;
+}
+
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 90vh;
+    /* background: linear-gradient(60deg,#555, #ddd, #555); */
+    background-attachment: fixed;
+  }
+
+  p {
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+
+  .big {
+    font-size: 56px;
+  }
+
+  .white {
+    color: white;
+    border-bottom: 15px solid yellow;
+  }
+
+  .blue {
+    color: 	#00FFFF;
+  }
+
+  .lightgray {
+    color: gray;
+  }
+
+/* ヘッダー */
+  .logo img {
+    width: 100vw;
+  }
+
+  .sns {
+    display: flex;
+    justify-content: center;
+  }
+  .sns div {
+    padding: 15px;
+  }
+  .sns img {
+    width: 46px;
+  }
+
+  header {
+    width: 100vw;
+    height: 760px;
+  }
+
+  header p {
+    color: white;
+  }
+
+/* メインメニュー */
+  .main-menu {
+    display: flex;
+  }
+  .main-menu div {
+    width: 50%;
+    text-align: center;
+    border: 0.1px solid lightgray;
+  }
+  .main-menu a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  .main-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+
+/* ウェルカムメッセージ */
+  .welcome {
+    margin-left: 10px;
+  }
+  .welcome h1 {
+    padding-top: 60px;
+    padding-left: 5px;
+    width: 100%;
+    margin: 0;
+    font-family: Lobster;
+    /* font-family: 'Anton', sans-serif; */
+    text-align: left;
+    color: black;
+    letter-spacing: 10px;
+    font-size: 30px;
+    line-height: 60px;
+    text-shadow: 1px 1px 0px black;
+  }
+  .welcome p {
+    color: #FFD700;
+    font-family: Lobster;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+
+/* メイン */
+  /* サービス */
+  .service {
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .service .content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+
+  .service_heading {
+    text-align: left;
+  }
+
+  .service_heading h2 {
+    width: 95%;
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+    font-family: Lobster;
+    letter-spacing:3px;
+    border-bottom: 5px solid #FFD700;
+    margin-bottom: 10px;
+  }
+  .service h3 {
+    width: 95%;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    letter-spacing:1px;
+    margin: 0;
+    text-align: center;
+  }
+  .service .subtitle {
+    display: inline-block;
+    color: gray;
+    font-size: 12px;
+    font-family: Lobster;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .service ul {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 0;
+    width: 90%;
+    border-radius: 2px;
+    border: 2px solid gray;
+  }
+
+  .service li {
+    list-style: none;
+    padding-top: 10px;
+    border-bottom: 3px dotted gray;
+  }
+
+  .service li::before {
+    content:'・';
+    color: darkred;
+  }
+
+  .service p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #222;
+    width: 100%;
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .service img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  /* ワークス */
+  .works {
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .works .content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+
+  .works_heading {
+    text-align: left;
+  }
+
+  .works_heading h2 {
+    width: 95%;
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+    font-family: Lobster;
+    letter-spacing:3px;
+    border-bottom: 5px solid #FFD700;
+    margin-bottom: 10px;
+  }
+  .works h3 {
+    width: 95%;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    letter-spacing:1px;
+    margin: 0;
+    text-align: center;
+  }
+  .works .subtitle {
+    display: inline-block;
+    color: gray;
+    font-size: 12px;
+    font-family: Lobster;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .works ul {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 0;
+    width: 90%;
+    border-radius: 2px;
+    border: 2px solid gray;
+  }
+
+  .works li {
+    list-style: none;
+    padding-top: 10px;
+    border-bottom: 3px dotted gray;
+  }
+
+  .works li::before {
+    content:'・';
+    color: darkred;
+  }
+
+  .works p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #222;
+    width: 100%;
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .works img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  /* ブログ */
+  .blog {
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .blog .content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+
+  .blog_heading {
+    text-align: left;
+  }
+
+  .blog_heading h2 {
+    width: 95%;
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+    font-family: Lobster;
+    letter-spacing:3px;
+    border-bottom: 5px solid #FFD700;
+    margin-bottom: 10px;
+  }
+  .blog h3 {
+    width: 95%;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    letter-spacing:1px;
+    margin: 0;
+    text-align: center;
+  }
+  .blog .subtitle {
+    display: inline-block;
+    color: gray;
+    font-size: 12px;
+    font-family: Lobster;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .blog ul {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 0;
+    width: 90%;
+    border-radius: 2px;
+    border: 2px solid gray;
+  }
+
+  .blog li {
+    list-style: none;
+    padding-top: 10px;
+    border-bottom: 3px dotted gray;
+  }
+
+  .blog li::before {
+    content:'・';
+    color: darkred;
+  }
+
+  .blog p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #222;
+    width: 100%;
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .blog img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  /* トップ矢印 */
+.to_top {
+  text-align: center;
+  margin: 20px 0;
+}
+
+  .to_top img {
+    width: 50px;
+    height: 30px;
+  }
+
+/* フッター */
+.copyrights {
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* お問い合わせ */
+  .contact p{
+    margin-bottom: 5px;
+    margin-left: 8px;
+  }
+
+  .input {
+    width: 80%;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .submit {
+    width: 70%;
+    background-color: yellow;
+    border-radius: 3px;
+    padding: 8px 20px;
+    margin-left: 30px;
+  }
